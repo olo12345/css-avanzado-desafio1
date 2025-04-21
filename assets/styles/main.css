@@ -1,0 +1,78 @@
+* *::before *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.text-large {
+    font-size: 45px;
+}
+
+.text-medium {
+    font-size: 16px;
+}
+
+.text-small {
+    font-size: 14px;
+}
+.text-xsmall {
+    font-size: 10px;
+}
+
+.open-sans-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.navbar {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    background-color: #f2f2f2;
+    border: none;
+    color: white;
+    background-color: #A491D2;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #CDC3E6;
+}
+.button:focus {
+    background-color: #BEC1BB;
+}
+
+.thumbnail-normal {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.thumbnail-small {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
