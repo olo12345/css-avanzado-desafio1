@@ -1,4 +1,6 @@
-* *::before *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,8 +17,17 @@
 .text-small {
     font-size: 14px;
 }
+
 .text-xsmall {
     font-size: 10px;
+}
+
+.color-osilver {
+    color: #828485;
+}
+
+.color-platinum {
+    color: #e8ebe4;
 }
 
 .open-sans-regular {
@@ -37,42 +48,107 @@
         "wdth" 100;
 }
 
+i {
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container-chats {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: 1px solid #bec1bb;
+}
+
+.user-info {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.left-box {
+    border-bottom: #bec1bb 1px solid;
+    border-left: #bec1bb 1px solid;
+    flex-grow: 1;
+    padding: 16px
+}
+
+.container-messages {
+    background-color: #e8ebe4;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .navbar {
-    background-color: #f2f2f2;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.button-box {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .button {
-    background-color: #f2f2f2;
-    border: none;
-    color: white;
     background-color: #A491D2;
-    padding: 10px 20px;
+    border: none;
+    padding: 10px 0px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
+    width: 100%;
 }
 
 .button:hover {
     background-color: #CDC3E6;
+    color: white;
 }
+
 .button:focus {
     background-color: #BEC1BB;
+    color: white;
+}
+
+.chat-mini {
+    display: flex;
+    align-items: center;
 }
 
 .thumbnail-normal {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    margin: 0 12px;
 }
+
 .thumbnail-small {
-    width: 50%;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin: 6px;
+}
+
+.logo {
+    width: 30%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 12px;
+}
+
+.intro-text {
+    width: 60%;
+    text-align: center;
 }
